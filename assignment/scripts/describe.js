@@ -12,6 +12,9 @@
 // We check if number is greater than or equal to 2. 2 is equal to 2, so
 // we console.log 'yes'.
 
+
+
+
 //CODE
 /*
 let number = 1;
@@ -26,10 +29,9 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We make a variable called name and set it to 'Dane' as a string.
+// We check if name is equal to 'Mary'. 'Dane' is not equal to 'Mary', so
+// we console.log 'How do you do?'.
 
 //CODE
 /*
@@ -45,10 +47,13 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+//We make a variable called secret with no initial value.
+// We make a variable called code and set it to 123 as a number.
+// We check if code is equal to 123. 123 is equal to 123, which is a correct condition
+// we set secret to 'super' and double the value of code. code is now 246.
+// We check if code is greater than 250. 246 is not greater than 250, so its a false condition
+// we do not change secret.
+// We console.log 'super'.
 
 //CODE
 /*
@@ -70,11 +75,15 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
+// We declare a variable called isStudent and set it to true.
+// We declare a variable called age and set it to 34 as a number.
+// We declare a variable called zip and set it to 55407 as a number.
 // 
-// 
-// 
-//
+// We check if isStudent is true & zip is greater than 8000. isStudent is true, but zip is not > 8000 so its a false condition. 
+// it will console.log "How about the weather?'
 
+// We check if isStudent is true, its not. We check if age is < 30, it is a false condition, therefore we will console.log 'How about the weather?'
+//We check if rStudent is true, the conditoin is true, therefore we console.log 'Welcome to Prime!'
 //CODE
 /*
 let isStudent = true;
@@ -110,8 +119,7 @@ if (isStudent === true && zip > 80000 ) {
 // -- it is, so we console.log 'yes'
 
 //CODE
-/*
-let number = 1;
+/*let number = 1;
 
 // FIX - number-- decrements number, but the instructions ask to increment. 
 // Should be number++.
@@ -136,6 +144,12 @@ let mix = true;
 
 if (mix === true) {
   colorOne = 'purple';
+
+  // The insutrciton says if mix = true then both colorOne and colorTwo should = puruple.
+  Fix // if (mix === true) {
+  colorOne = 'purple';
+  colorTwo = 'purple';
+
 }
 */
 
@@ -149,6 +163,9 @@ const time = 4;
 
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
+
+  // FIX: The instruction says both conditions with "and" (&&), but the code uses "or" (||). 
+// Should be: if (temp > 39 && time >= 4) {
 }
 */
 
@@ -162,8 +179,17 @@ const minAge = 21;
 
 if(minAge <= age) {
   console.log('no entry');
+  
+  //Fix : The condition is true if if age is greater than or equal to minAge, therefore the console.log should be 'entry' instead of 'no entry'
 } else {
   console.log('enter');
+
+  // this is the correct way to write it 
+  if (minAge <= age) {
+  console.log('enter');
+} else {
+  console.log('no entry');
+}
 }
 */
 
